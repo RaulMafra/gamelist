@@ -10,9 +10,9 @@ import com.gamelist.gamelist.projections.GameMinProjection;
 
 public interface GameRepository extends JpaRepository<Game, Long>{
 
-	//realiza consultas no banco H2
+	// realiza consultas no banco H2
 	
-	// consulta sql no JPA
+	// consulta sql no banco H2
 	@Query(nativeQuery = true, value = """
 			SELECT tb_game.id, tb_game.title, tb_game.game_year AS gameYear, tb_game.img_url AS imgUrl,
 			tb_game.short_description AS shortDescription, tb_belonging.position

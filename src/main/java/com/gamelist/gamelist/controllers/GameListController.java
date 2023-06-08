@@ -20,7 +20,7 @@ import com.gamelist.gamelist.services.GameService;
 @RequestMapping(value = "/lists")
 public class GameListController {
 
-	// injetando uma instância do GameService no GameController
+	// injetando uma instância do GameListService no GameListController
 	@Autowired
 	private GameListService gameListService;
 	
